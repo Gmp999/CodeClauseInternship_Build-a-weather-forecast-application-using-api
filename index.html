@@ -5,50 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title> Weather App</title>
+    <title>Weather App</title>
 </head>
 <body>
-    <div class="area" >
-        <ul class="circles">
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-     
-     <form id="search-form">
-        <input type="search"
-        placeholder="Enter City Name"
-        id="search-input"
-        autocomplete="off"
-        />
-        <br>
-     </br>
-     <button id="search-button">Search</button>
-     </form>
-    <br><br>
-
-     <main id="app-container">
-        <div id="location">
-            <p>--------</p>
-        </div>
-        <div id="temp">
-            <img id="temp-icon" src="images/sun.svg" alt="">
-            <p><span id="temp-value">-------</span> <span id="temp-unit">&#176c</span></p>
-        </div>
-        <div id="climate">
-            <p>---------</p>
-        </div>
-     </main>
-
-
+    <div class="app-container">
+        <header>
+            <h1>Weather App</h1>
+            <form id="search-form">
+                <input type="search" placeholder="Enter City Name" id="search-input" autocomplete="off">
+                <button id="search-button">Search</button>
+            </form>
+        </header>
+        <main>
+            <div class="weather-card">
+                <div id="location" class="location-info">
+                    <h2>Location</h2>
+                    <p>--------</p>
+                </div>
+                <div class="weather-info">
+                    <div id="temp" class="temp-info">
+                        <img id="temp-icon" src="images/sun.svg" alt="">
+                        <p><span id="temp-value">-------</span> <span id="temp-unit">&#176C</span></p>
+                    </div>
+                    <div id="climate" class="climate-info">
+                        <h2>Weather</h2>
+                        <p>---------</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
     <script src="script.js"></script>
-</ul>
-</div >
 </body>
 </html>
